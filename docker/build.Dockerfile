@@ -33,7 +33,7 @@ WORKDIR /raiden
 RUN git fetch --tags || true
 
 # install raiden
-RUN make install && pip install pyinstaller
+RUN make install && pip install pyinstaller==3.5
 
 ARG ARCHIVE_TAG
 ARG ARCHITECTURE_TAG
